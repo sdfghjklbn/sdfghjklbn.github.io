@@ -465,19 +465,3 @@ body {
   webkit-tap-highlight-color: rgba(255, 255, 255, 0.2);
 }
 
-
-
-
-#social #cont ul {
-    list-style-type:none;
-    display:flex;
-    justify-content: center
-
-}
-
-#social #cont ul li {
-    float: left;
-    padding-left: 10px;
-    display: list-item
-}
-
