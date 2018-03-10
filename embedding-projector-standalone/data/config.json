@@ -1,0 +1,10 @@
+{
+  "embeddings": [
+    {
+      "tensorName": "Fidesz",
+      "tensorShape": [10000, 250],
+      "tensorPath": "data/fidesz_word_vecs.tsv",
+      "metadataPath": "data/fidesz_word_freq.tsv"
+    }
+    ]
+}
