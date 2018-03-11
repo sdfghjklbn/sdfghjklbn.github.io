@@ -5,6 +5,74 @@
       "tensorShape": [10000, 250],
       "tensorPath": "data/fidesz_word_vecs.tsv",
       "metadataPath": "data/fidesz_word_freq.tsv"
+    },
+    {
+      "tensorName": "FKgP",
+      "tensorShape": [10000, 250],
+      "tensorPath": "data/FKgP_word_vecs.tsv",
+      "metadataPath": "data/FKgP_word_freq.tsv"
+    },
+    {
+      "tensorName": "Jobbik",
+      "tensorShape": [10000, 250],
+      "tensorPath": "data/Jobbik_word_vecs.tsv",
+      "metadataPath": "data/Jobbik_word_freq.tsv"
+    },
+
+    {
+      "tensorName": "KDNP",
+      "tensorShape": [10000, 250],
+      "tensorPath": "data/KDNP_word_vecs.tsv",
+      "metadataPath": "data/KDNP_word_freq.tsv"
+    },
+
+    {
+      "tensorName": "LMP",
+      "tensorShape": [10000, 250],
+      "tensorPath": "data/LMP_word_vecs.tsv",
+      "metadataPath": "data/LMP_word_freq.tsv"
+    },
+    {
+      "tensorName": "MDF",
+      "tensorShape": [10000, 250],
+      "tensorPath": "data/MDF_word_vecs.tsv",
+      "metadataPath": "data/MDF_word_freq.tsv"
+    },
+    {
+      "tensorName": "MDNP",
+      "tensorShape": [10000, 250],
+      "tensorPath": "data/MDNP_word_vecs.tsv",
+      "metadataPath": "data/MDNP_word_freq.tsv"
+    },
+    {
+      "tensorName": "MIÉP",
+      "tensorShape": [10000, 250],
+      "tensorPath": "data/MIÉP_word_vecs.tsv",
+      "metadataPath": "data/MIÉP_word_freq.tsv"
+    },
+    {
+      "tensorName": "MSZP",
+      "tensorShape": [10000, 250],
+      "tensorPath": "data/MSZP_word_vecs.tsv",
+      "metadataPath": "data/MSZP_word_freq.tsv"
+    },
+    {
+      "tensorName": "SZDSZ",
+      "tensorShape": [10000, 250],
+      "tensorPath": "data/SZDSZ_word_vecs.tsv",
+      "metadataPath": "data/SZDSZ_word_freq.tsv"
+    },
+    {
+      "tensorName": "Női képviselők felszólalásai",
+      "tensorShape": [10000, 250],
+      "tensorPath": "data/female_word_vecs.tsv",
+      "metadataPath": "data/female_word_freq.tsv"
+    },
+    {
+      "tensorName": "Férfi képviselők felszólalásai",
+      "tensorShape": [10000, 250],
+      "tensorPath": "data/male_word_vecs.tsv",
+      "metadataPath": "data/male_word_freq.tsv"
     }
     ]
 }
