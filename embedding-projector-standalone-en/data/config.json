@@ -63,13 +63,13 @@
       "metadataPath": "data/SZDSZ_word_freq.tsv"
     },
     {
-      "tensorName": "Női képviselők felszólalásai",
+      "tensorName": "Female",
       "tensorShape": [10000, 250],
       "tensorPath": "data/female_word_vecs.tsv",
       "metadataPath": "data/female_word_freq.tsv"
     },
     {
-      "tensorName": "Férfi képviselők felszólalásai",
+      "tensorName": "Male",
       "tensorShape": [10000, 250],
       "tensorPath": "data/male_word_vecs.tsv",
       "metadataPath": "data/male_word_freq.tsv"
