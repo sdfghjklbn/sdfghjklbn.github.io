@@ -3,8 +3,8 @@
     {
       "tensorName": "Fidesz",
       "tensorShape": [10000, 250],
-      "tensorPath": "data/fidesz_word_vecs.tsv",
-      "metadataPath": "data/fidesz_word_freq.tsv"
+      "tensorPath": "data/Fidesz_word_vecs.tsv",
+      "metadataPath": "data/Fidesz_word_freq.tsv"
     },
     {
       "tensorName": "FKgP",
