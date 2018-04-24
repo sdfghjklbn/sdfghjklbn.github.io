@@ -5,7 +5,9 @@
       "tensorShape": [10000, 250],
       "tensorPath": "data/female_word_vecs.tsv",
       "metadataPath": "data/female_word_freq.tsv",
-	  "bookmarksPath": "data/female.txt"
+	  "bookmarksPath": 
+	  ["data/female_mother.txt",
+	  "data/female_father.txt"]
     },
     {
       "tensorName": "Male",
