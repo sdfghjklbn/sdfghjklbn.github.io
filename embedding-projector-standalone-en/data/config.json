@@ -4,8 +4,7 @@
       "tensorName": "Female",
       "tensorShape": [10000, 250],
       "tensorPath": "data/female_word_vecs.tsv",
-      "metadataPath": "data/female_word_freq.tsv",
-	  "bookmarksPath": "data/female_mother.txt"
+      "metadataPath": "data/female_word_freq.tsv"
     },
     {
       "tensorName": "Male",
@@ -18,8 +17,7 @@
       "tensorName": "Fidesz",
       "tensorShape": [10000, 250],
       "tensorPath": "data/Fidesz_word_vecs.tsv",
-      "metadataPath": "data/Fidesz_word_freq.tsv",
-	  "bookmarksPath": "data/fidesz_mother.txt"
+      "metadataPath": "data/Fidesz_word_freq.tsv"
 
     },
     {
