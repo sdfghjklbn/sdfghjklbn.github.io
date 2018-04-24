@@ -11,8 +11,7 @@
       "tensorName": "Male",
       "tensorShape": [10000, 250],
       "tensorPath": "data/male_word_vecs.tsv",
-      "metadataPath": "data/male_word_freq.tsv",
-	  "bookmarksPath": "data/male_mother.txt"
+      "metadataPath": "data/male_word_freq.tsv"
 
     },
     {
