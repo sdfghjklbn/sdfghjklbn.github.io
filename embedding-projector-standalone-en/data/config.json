@@ -11,65 +11,75 @@
       "tensorName": "Male",
       "tensorShape": [10000, 250],
       "tensorPath": "data/male_word_vecs.tsv",
-      "metadataPath": "data/male_word_freq.tsv"
+      "metadataPath": "data/male_word_freq.tsv",
+	  "bookmarksPath": "data/male_mother.txt"
 
     },
     {
       "tensorName": "Fidesz",
       "tensorShape": [10000, 250],
       "tensorPath": "data/Fidesz_word_vecs.tsv",
-      "metadataPath": "data/Fidesz_word_freq.tsv"
+      "metadataPath": "data/Fidesz_word_freq.tsv",
+	  "bookmarksPath": "data/fidesz_mother.txt"
 
     },
     {
       "tensorName": "FKgP",
       "tensorShape": [10000, 250],
       "tensorPath": "data/FKgP_word_vecs.tsv",
-      "metadataPath": "data/FKgP_word_freq.tsv"
+      "metadataPath": "data/FKgP_word_freq.tsv",
+	  "bookmarksPath": "data/fkgp_mother.txt"
     },
     {
       "tensorName": "Jobbik",
       "tensorShape": [10000, 250],
       "tensorPath": "data/Jobbik_word_vecs.tsv",
-      "metadataPath": "data/Jobbik_word_freq.tsv"
+      "metadataPath": "data/Jobbik_word_freq.tsv",
+	  "bookmarksPath": "data/jobbik_woman.txt"
     },
 
     {
       "tensorName": "KDNP",
       "tensorShape": [10000, 250],
       "tensorPath": "data/KDNP_word_vecs.tsv",
-      "metadataPath": "data/KDNP_word_freq.tsv"
+      "metadataPath": "data/KDNP_word_freq.tsv",
+	  "bookmarksPath": "data/kdnp_mother.txt"
     },
 
     {
       "tensorName": "LMP",
       "tensorShape": [10000, 250],
       "tensorPath": "data/LMP_word_vecs.tsv",
-      "metadataPath": "data/LMP_word_freq.tsv"
+      "metadataPath": "data/LMP_word_freq.tsv",
+	  "bookmarksPath": "data/lmp_woman.txt"
     },
     {
       "tensorName": "MDF",
       "tensorShape": [10000, 250],
       "tensorPath": "data/MDF_word_vecs.tsv",
-      "metadataPath": "data/MDF_word_freq.tsv"
+      "metadataPath": "data/MDF_word_freq.tsv",
+	  "bookmarksPath": "data/mdf_mother.txt"
     },
     {
       "tensorName": "MDNP",
       "tensorShape": [10000, 250],
       "tensorPath": "data/MDNP_word_vecs.tsv",
-      "metadataPath": "data/MDNP_word_freq.tsv"
+      "metadataPath": "data/MDNP_word_freq.tsv",
+	  "bookmarksPath": "data/mndp_woman.txt"
     },
     {
       "tensorName": "MIÉP",
       "tensorShape": [10000, 250],
       "tensorPath": "data/MIÉP_word_vecs.tsv",
-      "metadataPath": "data/MIÉP_word_freq.tsv"
+      "metadataPath": "data/MIÉP_word_freq.tsv",
+	  "bookmarksPath": "data/miep_family.txt"
     },
     {
       "tensorName": "MSZP",
       "tensorShape": [10000, 250],
       "tensorPath": "data/MSZP_word_vecs.tsv",
-      "metadataPath": "data/MSZP_word_freq.tsv"
+      "metadataPath": "data/MSZP_word_freq.tsv",
+	  "bookmarksPath": "data/mszp_mother.txt"
     },
     {
       "tensorName": "SZDSZ",
