@@ -65,7 +65,7 @@
       "tensorShape": [10000, 250],
       "tensorPath": "data/MDNP_word_vecs.tsv",
       "metadataPath": "data/MDNP_word_freq.tsv",
-	  "bookmarksPath": "data/mndp_woman.txt"
+	  "bookmarksPath": "data/mdnp_woman.txt"
     },
     {
       "tensorName": "MIÉP",
@@ -85,7 +85,8 @@
       "tensorName": "SZDSZ",
       "tensorShape": [10000, 250],
       "tensorPath": "data/SZDSZ_word_vecs.tsv",
-      "metadataPath": "data/SZDSZ_word_freq.tsv"
+      "metadataPath": "data/SZDSZ_word_freq.tsv",
+	  "bookmarksPath": "data/szdsz_mother.txt"
     }
     ]
 }
