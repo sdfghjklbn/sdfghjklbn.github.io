@@ -57,7 +57,9 @@ body {
 <script charset="utf-8" src="https://d3js.org/d3.v4.min.js"></script>
 <select id="select-color">
     <option value="abs">Change in wages</option>
-    <option value="rel">Change in wages (normalized) </option>
+    <option value="rel">Change in wages (cf. to average)</option>
+    <option value="wg">Female wages (cf. to male wages)</option>
+    
 </select>
     <div id="my_dataviz"></div> 
 </body>
@@ -119,6 +121,13 @@ var colorSelect = d3.select("#select-color")
                 if(d.data.relevant_wagedif_norm == "1" & colorOption == "rel") {
                   return "#28B463";
                 }
+                 if(d.data.wagegap == "1" & colorOption == "wg") {
+                  return "#E74C3C";
+                }
+                if(d.data.wagegap == "0" & colorOption == "wg") {
+                  return "#28B463";
+                }           
+            
         })
         });
   
