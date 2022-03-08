@@ -59,7 +59,8 @@ body {
     <option value="abs">Change in wages</option>
     <option value="rel">Wage changes relative to the av. of wage changes</option>
     <option value="wg">Women's wages compared to men's</option>
-    
+    <option value="tenure">Women's tenure compared to men's</option>
+   
 </select>
     <div id="my_dataviz"></div> 
 </body>
@@ -127,7 +128,12 @@ var colorSelect = d3.select("#select-color")
                 if(d.data.wagegap == "0" & colorOption == "wg") {
                   return "#28B463";
                 }           
-            
+                if(d.data.tenure_dif == "1" & colorOption == "tenure") {
+                  return "#E74C3C";
+                }
+                if(d.data.tenure_dif == "0" & colorOption == "tenure") {
+                  return "#28B463";
+                }            
         })
         });
   
