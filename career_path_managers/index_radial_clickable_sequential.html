@@ -166,8 +166,15 @@ var colorSelect = d3.select("#select-color")
   
 let myvar="occ_15" 
  
+function Reset() {  
+    var dropDown = document.getElementById("select-color");  
+    dropDown.selectedIndex = 0;  
+}  
+
 var selectfeor = d3.select("#select-feor")
     .on("change", function() {
+        ///colorSelect.prop('selected', 'selected');
+        Reset();
         d3.select("svg").remove();
         myvar =  selectfeor.property('value');
         data_viz(myvar);
