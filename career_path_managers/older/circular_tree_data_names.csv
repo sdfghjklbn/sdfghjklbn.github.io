@@ -1,0 +1,274 @@
+id,value,wagedif,relevant_wagedif_abs,wage_sign,gender_dom,ffiak,nok,relevant_wagedif_rel,id_labels
+0,55576,,,,,,,1,0
+0.11,70,,,,1,52,18,1,0.Armed forces (t)
+0.12,411,,,,1,314,97,1,0.Armed forces (s)
+0.12.35,251,-511.69522,0,0,1,234,72,1,0.Armed forces (s).Service workers
+0.13,160,,,,1,151,9,1,0.Armed forces (e)
+0.15,947,,,,1,617,330,1,"0.Managing directors, managers"
+0.15.29,101,337.2934,1,1,0,301,290,1,"0.Managing directors, managers.Business related services administrators, agents"
+0.15.34,97,91.73822,0,1,0,416,490,1,"0.Managing directors, managers.Commercial and catering occupations"
+0.17,1453,,,,1,1091,362,1,"0.Technical, information technology, science related professionals"
+0.17.15,119,333.26663,1,1,1,324,66,1,"0.Technical, information technology, science related professionals.Managing directors, managers"
+0.17.21,57,554.50098,1,1,1,115,68,1,"0.Technical, information technology, science related professionals.Business type, legal and social sciences professionals"
+0.17.23,117,334.07806,1,1,1,229,120,1,"0.Technical, information technology, science related professionals.Other highly qualified executives"
+0.17.24,200,267.70187,1,1,1,559,121,1,"0.Technical, information technology, science related professionals.Technicians and technical professionals"
+0.17.24.17,86,870.16498,1,1,1,1209,249,3,"0.Technical, information technology, science related professionals.Technicians and technical professionals.Technical, information technology, science related professionals"
+0.17.29,59,314.95038,1,1,1,122,68,1,"0.Technical, information technology, science related professionals.Business related services administrators, agents"
+0.18,482,,,,2,96,386,1,0.Health professionals
+0.19,64,,,,2,18,46,1,0.Social services professional
+0.20,1247,,,,2,256,991,1,"0.Educators, teachers"
+0.20.32,75,-41.337429,0,0,2,14,127,1,"0.Educators, teachers.Office clerks"
+0.21,1222,,,,2,468,754,1,"0.Business type, legal and social sciences professionals"
+0.21.15,102,369.51068,1,1,0,223,237,1,"0.Business type, legal and social sciences professionals.Managing directors, managers"
+0.21.23,108,383.63885,1,1,2,154,274,1,"0.Business type, legal and social sciences professionals.Other highly qualified executives"
+0.21.29,343,334.79681,1,1,2,425,796,1,"0.Business type, legal and social sciences professionals.Business related services administrators, agents"
+0.21.29.21,85,616.22559,1,1,2,536,987,3,"0.Business type, legal and social sciences professionals.Business related services administrators, agents.Business type, legal and social sciences professionals"
+0.21.32,90,509.72012,1,1,2,77,258,1,"0.Business type, legal and social sciences professionals.Office clerks"
+0.21.34,60,63.531883,0,1,0,91,104,1,"0.Business type, legal and social sciences professionals.Commercial and catering occupations"
+0.22,288,,,,0,123,165,1,"0.Culture, sports, arts and religion professionals"
+0.23,583,,,,2,216,367,1,0.Other highly qualified executives
+0.23.21,93,357.21707,1,1,2,137,242,1,"0.Other highly qualified executives.Business type, legal and social sciences professionals"
+0.23.29,74,327.06641,1,1,2,101,260,1,"0.Other highly qualified executives.Business related services administrators, agents"
+0.24,1922,,,,1,1412,510,1,0.Technicians and technical professionals
+0.24.15,91,331.20688,1,1,1,333,61,1,"0.Technicians and technical professionals.Managing directors, managers"
+0.24.17,595,870.16498,1,1,1,1209,249,1,"0.Technicians and technical professionals.Technical, information technology, science related professionals"
+0.24.17.24,118,267.70187,1,1,1,559,121,2,"0.Technicians and technical professionals.Technical, information technology, science related professionals.Technicians and technical professionals"
+0.24.29,117,454.74747,1,1,0,223,169,1,"0.Technicians and technical professionals.Business related services administrators, agents"
+0.24.31,58,380.87766,1,1,0,114,83,1,0.Technicians and technical professionals.Other administrators
+0.24.32,98,210.07239,0,1,0,123,174,1,0.Technicians and technical professionals.Office clerks
+0.24.33,58,415.05582,1,1,0,83,99,1,0.Technicians and technical professionals.Customer services occupations
+0.24.34,89,266.47131,1,1,0,148,113,1,0.Technicians and technical professionals.Commercial and catering occupations
+0.24.40,72,68.444458,0,1,1,316,15,1,0.Technicians and technical professionals.Metal and electrical industry occupations
+0.24.48,98,-126.27296,0,0,1,382,125,1,0.Technicians and technical professionals.Occupations not requiring qualifications
+0.26,616,,,,2,149,467,1,0.Health professionals
+0.26.18,57,786.16071,1,1,2,27,81,1,0.Health professionals.Health professionals
+0.27,199,,,,2,37,162,1,0.Educational assistants
+0.28,325,,,,2,36,289,1,"0.Social health care, labour market services professionals"
+0.29,3906,,,,2,1261,2646,1,"0.Business related services administrators, agents"
+0.29.15,200,240.74156,0,1,0,434,463,1,"0.Business related services administrators, agents.Managing directors, managers"
+0.29.17,86,966.83423,1,1,1,158,83,1,"0.Business related services administrators, agents.Technical, information technology, science related professionals"
+0.29.21,599,616.22559,1,1,2,536,987,1,"0.Business related services administrators, agents.Business type, legal and social sciences professionals"
+0.29.21.23,60,383.63885,1,1,2,154,274,2,"0.Business related services administrators, agents.Business type, legal and social sciences professionals.Other highly qualified executives"
+0.29.21.29,154,334.79681,1,1,2,425,796,2,"0.Business related services administrators, agents.Business type, legal and social sciences professionals.Business related services administrators, agents"
+0.29.23,162,458.07889,1,1,2,170,415,1,"0.Business related services administrators, agents.Other highly qualified executives"
+0.29.24,123,389.71616,1,1,0,233,169,1,"0.Business related services administrators, agents.Technicians and technical professionals"
+0.29.31,228,353.51776,1,1,2,195,541,1,"0.Business related services administrators, agents.Other administrators"
+0.29.31.29,62,604.98505,1,1,2,221,602,3,"0.Business related services administrators, agents.Other administrators.Business related services administrators, agents"
+0.29.32,538,210.85149,0,1,2,256,1403,1,"0.Business related services administrators, agents.Office clerks"
+0.29.32.29,165,369.56842,1,1,2,310,1571,3,"0.Business related services administrators, agents.Office clerks.Business related services administrators, agents"
+0.29.33,388,-121.77542,0,0,2,273,881,1,"0.Business related services administrators, agents.Customer services occupations"
+0.29.33.29,86,465.34787,1,1,2,231,838,3,"0.Business related services administrators, agents.Customer services occupations.Business related services administrators, agents"
+0.29.34,304,6.1017447,0,1,2,394,718,1,"0.Business related services administrators, agents.Commercial and catering occupations"
+0.29.34.29,64,900.1441,1,1,2,585,1170,3,"0.Business related services administrators, agents.Commercial and catering occupations.Business related services administrators, agents"
+0.29.35,82,43.992531,0,1,0,119,152,1,"0.Business related services administrators, agents.Service workers"
+0.29.48,151,-95.994537,0,0,0,414,286,1,"0.Business related services administrators, agents.Occupations not requiring qualifications"
+0.30,369,,,,0,170,199,1,"0.Arts, cultural, sports and religious professionals"
+0.30.22,80,164.43864,0,1,0,86,100,1,"0.Arts, cultural, sports and religious professionals.Culture, sports, arts and religion professionals"
+0.31,1259,,,,2,448,811,1,0.Other administrators
+0.31.17,61,1738.8882,1,1,1,113,45,1,"0.Other administrators.Technical, information technology, science related professionals"
+0.31.21,92,605.79669,1,1,2,93,143,1,"0.Other administrators.Business type, legal and social sciences professionals"
+0.31.23,75,626.72607,1,1,2,88,214,1,0.Other administrators.Other highly qualified executives
+0.31.29,240,604.98505,1,1,2,221,602,1,"0.Other administrators.Business related services administrators, agents"
+0.31.32,157,-240.02193,0,0,2,100,522,1,0.Other administrators.Office clerks
+0.31.33,76,435.66885,1,1,2,73,205,1,0.Other administrators.Customer services occupations
+0.31.34,80,270.40646,1,1,2,84,188,1,0.Other administrators.Commercial and catering occupations
+0.31.48,57,16.84078,0,1,0,118,156,1,0.Other administrators.Occupations not requiring qualifications
+0.32,2989,,,,2,617,2372,1,0.Office clerks
+0.32.15,127,225.01297,0,1,2,134,342,1,"0.Office clerks.Managing directors, managers"
+0.32.17,93,1221.7345,1,1,0,121,96,1,"0.Office clerks.Technical, information technology, science related professionals"
+0.32.20,57,915.96594,1,1,2,13,174,1,"0.Office clerks.Educators, teachers"
+0.32.21,190,960.80066,1,1,2,117,377,1,"0.Office clerks.Business type, legal and social sciences professionals"
+0.32.23,96,656.91144,1,1,2,52,249,1,0.Office clerks.Other highly qualified executives
+0.32.24,98,713.65997,1,1,0,154,165,1,0.Office clerks.Technicians and technical professionals
+0.32.26,86,163.14226,0,1,2,25,253,1,0.Office clerks.Health professionals
+0.32.29,671,369.56842,1,1,2,310,1571,1,"0.Office clerks.Business related services administrators, agents"
+0.32.29.21,81,616.22559,1,1,2,536,987,3,"0.Office clerks.Business related services administrators, agents.Business type, legal and social sciences professionals"
+0.32.29.32,144,210.85149,0,1,2,256,1403,2,"0.Office clerks.Business related services administrators, agents.Office clerks"
+0.32.31,226,356.2066,1,1,2,128,634,1,0.Office clerks.Other administrators
+0.32.33,202,317.94257,1,1,2,102,608,1,0.Office clerks.Customer services occupations
+0.32.34,216,272.93503,1,1,2,94,667,1,0.Office clerks.Commercial and catering occupations
+0.32.35,67,243.21149,1,1,2,56,206,1,0.Office clerks.Service workers
+0.32.48,169,60.727482,0,1,2,216,576,1,0.Office clerks.Occupations not requiring qualifications
+0.33,1766,,,,2,479,1287,1,0.Customer services occupations
+0.33.21,71,873.37366,1,1,2,63,159,1,"0.Customer services occupations.Business type, legal and social sciences professionals"
+0.33.24,98,720.37665,1,1,0,145,111,1,0.Customer services occupations.Technicians and technical professionals
+0.33.29,315,465.34787,1,1,2,231,838,1,"0.Customer services occupations.Business related services administrators, agents"
+0.33.29.32,61,210.85149,0,1,2,256,1403,2,"0.Customer services occupations.Business related services administrators, agents.Office clerks"
+0.33.31,84,288.44452,1,1,2,73,224,1,0.Customer services occupations.Other administrators
+0.33.32,238,150.1003,0,1,2,101,686,1,0.Customer services occupations.Office clerks
+0.33.34,316,97.111343,0,1,2,211,1071,1,0.Customer services occupations.Commercial and catering occupations
+0.33.35,59,347.46436,1,1,0,105,131,1,0.Customer services occupations.Service workers
+0.33.48,132,40.040398,0,1,2,164,313,1,0.Customer services occupations.Occupations not requiring qualifications
+0.34,9998,,,,2,3449,6549,1,0.Commercial and catering occupations
+0.34.15,606,226.72206,0,1,0,684,737,1,"0.Commercial and catering occupations.Managing directors, managers"
+0.34.15.34,259,91.73822,0,1,0,416,490,2,"0.Commercial and catering occupations.Managing directors, managers.Commercial and catering occupations"
+0.34.15.34.15,67,226.72206,0,1,0,684,737,3,"0.Commercial and catering occupations.Managing directors, managers.Commercial and catering occupations.Managing directors, managers"
+0.34.17,74,2960.6299,1,1,1,97,43,1,"0.Commercial and catering occupations.Technical, information technology, science related professionals"
+0.34.20,127,934.50049,1,1,2,36,177,1,"0.Commercial and catering occupations.Educators, teachers"
+0.34.21,172,1119.5295,1,1,0,141,162,1,"0.Commercial and catering occupations.Business type, legal and social sciences professionals"
+0.34.23,65,1788.3215,1,1,2,41,74,1,0.Commercial and catering occupations.Other highly qualified executives
+0.34.24,220,649.79871,1,1,1,253,166,1,0.Commercial and catering occupations.Technicians and technical professionals
+0.34.26,89,431.25601,1,1,2,21,139,1,0.Commercial and catering occupations.Health professionals
+0.34.28,58,263.99841,1,1,2,7,114,1,"0.Commercial and catering occupations.Social health care, labour market services professionals"
+0.34.29,866,900.1441,1,1,2,585,1170,1,"0.Commercial and catering occupations.Business related services administrators, agents"
+0.34.29.15,59,240.74156,0,1,0,434,463,2,"0.Commercial and catering occupations.Business related services administrators, agents.Managing directors, managers"
+0.34.29.32,90,210.85149,0,1,2,256,1403,2,"0.Commercial and catering occupations.Business related services administrators, agents.Office clerks"
+0.34.29.33,105,-121.77542,0,0,2,273,881,2,"0.Commercial and catering occupations.Business related services administrators, agents.Customer services occupations"
+0.34.29.34,193,6.1017447,0,1,2,394,718,2,"0.Commercial and catering occupations.Business related services administrators, agents.Commercial and catering occupations"
+0.34.31,224,574.3653,1,1,2,122,314,1,0.Commercial and catering occupations.Other administrators
+0.34.32,667,301.02228,1,1,2,152,1147,1,0.Commercial and catering occupations.Office clerks
+0.34.32.29,89,369.56842,1,1,2,310,1571,3,"0.Commercial and catering occupations.Office clerks.Business related services administrators, agents"
+0.34.32.34,132,272.93503,1,1,2,94,667,2,0.Commercial and catering occupations.Office clerks.Commercial and catering occupations
+0.34.33,762,355.26559,1,1,2,235,1175,1,0.Commercial and catering occupations.Customer services occupations
+0.34.33.29,83,465.34787,1,1,2,231,838,3,"0.Commercial and catering occupations.Customer services occupations.Business related services administrators, agents"
+0.34.33.32,70,150.1003,0,1,2,101,686,2,0.Commercial and catering occupations.Customer services occupations.Office clerks
+0.34.33.34,323,97.111343,0,1,2,211,1071,2,0.Commercial and catering occupations.Customer services occupations.Commercial and catering occupations
+0.34.35,506,204.20065,0,1,0,423,584,1,0.Commercial and catering occupations.Service workers
+0.34.35.34,118,140.02341,0,1,2,308,471,2,0.Commercial and catering occupations.Service workers.Commercial and catering occupations
+0.34.35.48,78,57.190861,0,1,1,1157,473,2,0.Commercial and catering occupations.Service workers.Occupations not requiring qualifications
+0.34.38,135,271.17917,1,1,0,183,126,1,0.Commercial and catering occupations.Food processing workers
+0.34.39,89,-173.14552,0,0,0,86,100,1,0.Commercial and catering occupations.Light industry occupations
+0.34.40,191,394.83902,1,1,1,313,97,1,0.Commercial and catering occupations.Metal and electrical industry occupations
+0.34.42,66,173.759,0,1,1,193,2,1,0.Commercial and catering occupations.Building industry occupations
+0.34.44,306,395.76724,1,1,2,256,386,1,0.Commercial and catering occupations.Manufacturing machine operators
+0.34.44.34,72,221.877,0,1,2,220,358,2,0.Commercial and catering occupations.Manufacturing machine operators.Commercial and catering occupations
+0.34.44.48,61,-5.1177282,0,0,1,1646,782,2,0.Commercial and catering occupations.Manufacturing machine operators.Occupations not requiring qualifications
+0.34.45,322,328.75403,1,1,2,197,478,1,0.Commercial and catering occupations.Assemblers
+0.34.45.34,78,214.45697,0,1,2,182,448,2,0.Commercial and catering occupations.Assemblers.Commercial and catering occupations
+0.34.45.48,80,8.6834583,0,1,0,1325,1029,2,0.Commercial and catering occupations.Assemblers.Occupations not requiring qualifications
+0.34.47,169,30.949514,0,1,1,448,35,1,0.Commercial and catering occupations.Drivers and mobile machinery operators
+0.34.48,2051,64.55645,0,1,0,2143,2731,1,0.Commercial and catering occupations.Occupations not requiring qualifications
+0.34.48.29,58,700.8631,1,1,1,585,362,3,"0.Commercial and catering occupations.Occupations not requiring qualifications.Business related services administrators, agents"
+0.34.48.32,77,350.60614,1,1,2,274,752,3,0.Commercial and catering occupations.Occupations not requiring qualifications.Office clerks
+0.34.48.34,725,248.87659,1,1,0,1862,1975,3,0.Commercial and catering occupations.Occupations not requiring qualifications.Commercial and catering occupations
+0.34.48.34.48,211,64.55645,0,1,0,2143,2731,2,0.Commercial and catering occupations.Occupations not requiring qualifications.Commercial and catering occupations.Occupations not requiring qualifications
+0.34.48.34.48.34,79,248.87659,1,1,0,1862,1975,3,0.Commercial and catering occupations.Occupations not requiring qualifications.Commercial and catering occupations.Occupations not requiring qualifications.Commercial and catering occupations
+0.34.48.35,93,317.69772,1,1,1,1173,535,3,0.Commercial and catering occupations.Occupations not requiring qualifications.Service workers
+0.34.48.44,79,449.80533,1,1,1,1573,629,3,0.Commercial and catering occupations.Occupations not requiring qualifications.Manufacturing machine operators
+0.34.48.45,75,404.6539,1,1,0,1222,926,3,0.Commercial and catering occupations.Occupations not requiring qualifications.Assemblers
+0.35,2642,,,,0,1396,1246,1,0.Service workers
+0.35.12,73,.50389886,0,1,1,157,17,1,0.Service workers.Armed forces (s)
+0.35.15,59,470.38837,1,1,1,113,61,1,"0.Service workers.Managing directors, managers"
+0.35.24,57,640.79028,1,1,1,129,40,1,0.Service workers.Technicians and technical professionals
+0.35.26,110,432.06256,1,1,2,62,164,1,0.Service workers.Health professionals
+0.35.29,147,654.25256,1,1,0,151,195,1,"0.Service workers.Business related services administrators, agents"
+0.35.32,88,291.61401,1,1,2,56,195,1,0.Service workers.Office clerks
+0.35.33,77,293.65942,1,1,2,87,148,1,0.Service workers.Customer services occupations
+0.35.34,291,140.02341,0,1,2,308,471,1,0.Service workers.Commercial and catering occupations
+0.35.34.48,60,64.55645,0,1,0,2143,2731,2,0.Service workers.Commercial and catering occupations.Occupations not requiring qualifications
+0.35.40,60,-25.278612,0,0,1,184,5,1,0.Service workers.Metal and electrical industry occupations
+0.35.47,81,212.36998,0,1,1,319,11,1,0.Service workers.Drivers and mobile machinery operators
+0.35.48,390,57.190861,0,1,1,1157,473,1,0.Service workers.Occupations not requiring qualifications
+0.35.48.35,85,317.69772,1,1,1,1173,535,3,0.Service workers.Occupations not requiring qualifications.Service workers
+0.36,585,,,,1,419,166,1,0.Agricultural occupations
+0.36.48,230,57.312977,0,1,1,593,182,1,0.Agricultural occupations.Occupations not requiring qualifications
+0.37,126,,,,1,111,15,1,"0.Forestry, game-farming and fisheries "
+0.38,1066,,,,1,679,387,1,0.Food processing workers
+0.38.34,132,23.406256,0,1,0,177,130,1,0.Food processing workers.Commercial and catering occupations
+0.38.44,80,222.07269,0,1,1,145,68,1,0.Food processing workers.Manufacturing machine operators
+0.38.48,377,-94.378372,0,0,1,691,379,1,0.Food processing workers.Occupations not requiring qualifications
+0.38.48.38,66,265.75912,1,1,1,512,220,3,0.Food processing workers.Occupations not requiring qualifications.Food processing workers
+0.39,1392,,,,1,901,491,1,0.Light industry occupations
+0.39.34,104,290.20987,1,1,0,101,109,1,0.Light industry occupations.Commercial and catering occupations
+0.39.40,77,208.64632,0,1,1,134,25,1,0.Light industry occupations.Metal and electrical industry occupations
+0.39.42,95,55.564518,0,1,1,180,0,1,0.Light industry occupations.Building industry occupations
+0.39.44,157,429.23303,1,1,0,183,123,1,0.Light industry occupations.Manufacturing machine operators
+0.39.45,73,507.61618,1,1,0,81,65,1,0.Light industry occupations.Assemblers
+0.39.48,415,175.28078,0,1,1,595,308,1,0.Light industry occupations.Occupations not requiring qualifications
+0.39.48.39,56,115.60252,0,1,1,402,168,2,0.Light industry occupations.Occupations not requiring qualifications.Light industry occupations
+0.40,2667,,,,1,2366,301,1,0.Metal and electrical industry occupations
+0.40.24,188,556.53552,1,1,1,474,27,1,0.Metal and electrical industry occupations.Technicians and technical professionals
+0.40.29,60,743.7879,1,1,1,111,17,1,"0.Metal and electrical industry occupations.Business related services administrators, agents"
+0.40.34,152,158.59062,0,1,1,265,102,1,0.Metal and electrical industry occupations.Commercial and catering occupations
+0.40.35,99,75.602783,0,1,1,206,19,1,0.Metal and electrical industry occupations.Service workers
+0.40.42,147,120.40411,0,1,1,488,0,1,0.Metal and electrical industry occupations.Building industry occupations
+0.40.42.40,58,430.00369,1,1,1,539,1,3,0.Metal and electrical industry occupations.Building industry occupations.Metal and electrical industry occupations
+0.40.44,241,223.14841,0,1,1,663,104,1,0.Metal and electrical industry occupations.Manufacturing machine operators
+0.40.44.40,63,360.32855,1,1,1,667,92,3,0.Metal and electrical industry occupations.Manufacturing machine operators.Metal and electrical industry occupations
+0.40.45,211,215.67421,0,1,1,416,194,1,0.Metal and electrical industry occupations.Assemblers
+0.40.47,159,213.74222,0,1,1,398,1,1,0.Metal and electrical industry occupations.Drivers and mobile machinery operators
+0.40.48,549,29.232962,0,1,1,1588,196,1,0.Metal and electrical industry occupations.Occupations not requiring qualifications
+0.40.48.40,144,403.02008,1,1,1,1570,124,3,0.Metal and electrical industry occupations.Occupations not requiring qualifications.Metal and electrical industry occupations
+0.41,161,,,,0,86,75,1,0.Handicraft workers
+0.42,1707,,,,1,1695,12,1,0.Building industry occupations
+0.42.34,82,296.24075,1,1,1,189,5,1,0.Building industry occupations.Commercial and catering occupations
+0.42.40,190,430.00369,1,1,1,539,1,1,0.Building industry occupations.Metal and electrical industry occupations
+0.42.44,79,722.88605,1,1,1,207,1,1,0.Building industry occupations.Manufacturing machine operators
+0.42.45,57,519.55933,1,1,1,141,1,1,0.Building industry occupations.Assemblers
+0.42.47,60,368.98779,1,1,1,185,1,1,0.Building industry occupations.Drivers and mobile machinery operators
+0.42.48,607,8.7152719,0,1,1,1940,13,1,0.Building industry occupations.Occupations not requiring qualifications
+0.42.48.42,236,243.94368,1,1,1,1744,18,3,0.Building industry occupations.Occupations not requiring qualifications.Building industry occupations
+0.42.48.42.48,104,8.7152719,0,1,1,1940,13,2,0.Building industry occupations.Occupations not requiring qualifications.Building industry occupations.Occupations not requiring qualifications
+0.43,139,,,,1,130,9,1,0.Other industry and construction industry occupations
+0.43.48,56,122.80605,0,1,1,369,30,1,0.Other industry and construction industry occupations.Occupations not requiring qualifications
+0.44,2189,,,,1,1365,824,1,0.Manufacturing machine operators
+0.44.24,124,386.40128,1,1,1,301,129,1,0.Manufacturing machine operators.Technicians and technical professionals
+0.44.34,201,221.877,0,1,2,220,358,1,0.Manufacturing machine operators.Commercial and catering occupations
+0.44.34.48,57,64.55645,0,1,0,2143,2731,2,0.Manufacturing machine operators.Commercial and catering occupations.Occupations not requiring qualifications
+0.44.35,73,309.53812,1,1,1,163,68,1,0.Manufacturing machine operators.Service workers
+0.44.39,93,200.71286,0,1,1,138,89,1,0.Manufacturing machine operators.Light industry occupations
+0.44.40,214,360.32855,1,1,1,667,92,1,0.Manufacturing machine operators.Metal and electrical industry occupations
+0.44.42,67,16.43199,0,1,1,204,5,1,0.Manufacturing machine operators.Building industry occupations
+0.44.45,293,205.63347,0,1,0,538,595,1,0.Manufacturing machine operators.Assemblers
+0.44.45.44,65,164.8671,0,1,0,549,534,2,0.Manufacturing machine operators.Assemblers.Manufacturing machine operators
+0.44.45.48,81,8.6834583,0,1,0,1325,1029,2,0.Manufacturing machine operators.Assemblers.Occupations not requiring qualifications
+0.44.48,572,-5.1177282,0,0,1,1646,782,1,0.Manufacturing machine operators.Occupations not requiring qualifications
+0.44.48.44,97,449.80533,1,1,1,1573,629,3,0.Manufacturing machine operators.Occupations not requiring qualifications.Manufacturing machine operators
+0.44.48.45,66,404.6539,1,1,0,1222,926,3,0.Manufacturing machine operators.Occupations not requiring qualifications.Assemblers
+0.45,1972,,,,0,935,1037,1,0.Assemblers
+0.45.24,93,509.43506,1,1,1,183,115,1,0.Assemblers.Technicians and technical professionals
+0.45.34,203,214.45697,0,1,2,182,448,1,0.Assemblers.Commercial and catering occupations
+0.45.35,66,251.54256,1,1,1,128,79,1,0.Assemblers.Service workers
+0.45.40,177,424.58206,1,1,1,404,133,1,0.Assemblers.Metal and electrical industry occupations
+0.45.44,325,164.8671,0,1,0,549,534,1,0.Assemblers.Manufacturing machine operators
+0.45.44.45,88,205.63347,0,1,0,538,595,3,0.Assemblers.Manufacturing machine operators.Assemblers
+0.45.44.48,73,-5.1177282,0,0,1,1646,782,2,0.Assemblers.Manufacturing machine operators.Occupations not requiring qualifications
+0.45.48,571,8.6834583,0,1,0,1325,1029,1,0.Assemblers.Occupations not requiring qualifications
+0.45.48.44,62,449.80533,1,1,1,1573,629,3,0.Assemblers.Occupations not requiring qualifications.Manufacturing machine operators
+0.45.48.45,103,404.6539,1,1,0,1222,926,3,0.Assemblers.Occupations not requiring qualifications.Assemblers
+0.46,259,,,,1,178,81,1,0.Stationary machine operators
+0.46.48,62,47.360947,0,1,1,222,105,1,0.Stationary machine operators.Occupations not requiring qualifications
+0.47,789,,,,1,768,21,1,0.Drivers and mobile machinery operators
+0.47.34,63,138.93083,0,1,1,279,18,1,0.Drivers and mobile machinery operators.Commercial and catering occupations
+0.47.48,152,15.750889,0,1,1,1184,36,1,0.Drivers and mobile machinery operators.Occupations not requiring qualifications
+0.48,9577,,,,1,6018,3559,1,0.Occupations not requiring qualifications
+0.48.15,130,482.3027,1,1,1,406,118,1,"0.Occupations not requiring qualifications.Managing directors, managers"
+0.48.17,89,3653.7693,1,1,1,136,29,1,"0.Occupations not requiring qualifications.Technical, information technology, science related professionals"
+0.48.20,57,1363.1597,1,1,2,45,113,1,"0.Occupations not requiring qualifications.Educators, teachers"
+0.48.24,248,1108.5721,1,1,1,544,154,1,0.Occupations not requiring qualifications.Technicians and technical professionals
+0.48.28,88,438.7005,1,1,2,60,225,1,"0.Occupations not requiring qualifications.Social health care, labour market services professionals"
+0.48.29,312,700.8631,1,1,1,585,362,1,"0.Occupations not requiring qualifications.Business related services administrators, agents"
+0.48.31,104,534.0827,1,1,0,167,235,1,0.Occupations not requiring qualifications.Other administrators
+0.48.32,285,350.60614,1,1,2,274,752,1,0.Occupations not requiring qualifications.Office clerks
+0.48.32.48,70,60.727482,0,1,2,216,576,2,0.Occupations not requiring qualifications.Office clerks.Occupations not requiring qualifications
+0.48.33,146,751.80682,1,1,2,181,292,1,0.Occupations not requiring qualifications.Customer services occupations
+0.48.34,1068,248.87659,1,1,0,1862,1975,1,0.Occupations not requiring qualifications.Commercial and catering occupations
+0.48.34.29,66,900.1441,1,1,2,585,1170,3,"0.Occupations not requiring qualifications.Commercial and catering occupations.Business related services administrators, agents"
+0.48.34.48,394,64.55645,0,1,0,2143,2731,2,0.Occupations not requiring qualifications.Commercial and catering occupations.Occupations not requiring qualifications
+0.48.34.48.34,107,248.87659,1,1,0,1862,1975,3,0.Occupations not requiring qualifications.Commercial and catering occupations.Occupations not requiring qualifications.Commercial and catering occupations
+0.48.35,502,317.69772,1,1,1,1173,535,1,0.Occupations not requiring qualifications.Service workers
+0.48.35.48,199,57.190861,0,1,1,1157,473,2,0.Occupations not requiring qualifications.Service workers.Occupations not requiring qualifications
+0.48.36,196,236.83958,0,1,1,473,123,1,0.Occupations not requiring qualifications.Agricultural occupations
+0.48.36.48,122,57.312977,0,1,1,593,182,2,0.Occupations not requiring qualifications.Agricultural occupations.Occupations not requiring qualifications
+0.48.37,87,86.435432,0,1,1,197,20,1,"0.Occupations not requiring qualifications.Forestry, game-farming and fisheries "
+0.48.38,239,265.75912,1,1,1,512,220,1,0.Occupations not requiring qualifications.Food processing workers
+0.48.38.48,127,-94.378372,0,0,1,691,379,2,0.Occupations not requiring qualifications.Food processing workers.Occupations not requiring qualifications
+0.48.39,191,115.60252,0,1,1,402,168,1,0.Occupations not requiring qualifications.Light industry occupations
+0.48.39.48,77,175.28078,0,1,1,595,308,3,0.Occupations not requiring qualifications.Light industry occupations.Occupations not requiring qualifications
+0.48.40,494,403.02008,1,1,1,1570,124,1,0.Occupations not requiring qualifications.Metal and electrical industry occupations
+0.48.40.44,58,223.14841,0,1,1,663,104,2,0.Occupations not requiring qualifications.Metal and electrical industry occupations.Manufacturing machine operators
+0.48.40.48,177,29.232962,0,1,1,1588,196,2,0.Occupations not requiring qualifications.Metal and electrical industry occupations.Occupations not requiring qualifications
+0.48.42,481,243.94368,1,1,1,1744,18,1,0.Occupations not requiring qualifications.Building industry occupations
+0.48.42.48,262,8.7152719,0,1,1,1940,13,2,0.Occupations not requiring qualifications.Building industry occupations.Occupations not requiring qualifications
+0.48.42.48.42,70,243.94368,1,1,1,1744,18,3,0.Occupations not requiring qualifications.Building industry occupations.Occupations not requiring qualifications.Building industry occupations
+0.48.43,125,161.15207,0,1,1,357,34,1,0.Occupations not requiring qualifications.Other industry and construction industry occupations
+0.48.43.48,74,122.80605,0,1,1,369,30,2,0.Occupations not requiring qualifications.Other industry and construction industry occupations.Occupations not requiring qualifications
+0.48.44,630,449.80533,1,1,1,1573,629,1,0.Occupations not requiring qualifications.Manufacturing machine operators
+0.48.44.45,70,205.63347,0,1,0,538,595,2,0.Occupations not requiring qualifications.Manufacturing machine operators.Assemblers
+0.48.44.48,253,-5.1177282,0,0,1,1646,782,2,0.Occupations not requiring qualifications.Manufacturing machine operators.Occupations not requiring qualifications
+0.48.45,626,404.6539,1,1,0,1222,926,1,0.Occupations not requiring qualifications.Assemblers
+0.48.45.44,72,164.8671,0,1,0,549,534,2,0.Occupations not requiring qualifications.Assemblers.Manufacturing machine operators
+0.48.45.48,269,8.6834583,0,1,0,1325,1029,2,0.Occupations not requiring qualifications.Assemblers.Occupations not requiring qualifications
+0.48.46,98,474.17801,1,1,1,245,103,1,0.Occupations not requiring qualifications.Stationary machine operators
+0.48.47,356,241.30574,0,1,1,1590,41,1,0.Occupations not requiring qualifications.Drivers and mobile machinery operators
+0.48.47.48,120,15.750889,0,1,1,1184,36,2,0.Occupations not requiring qualifications.Drivers and mobile machinery operators.Occupations not requiring qualifications
