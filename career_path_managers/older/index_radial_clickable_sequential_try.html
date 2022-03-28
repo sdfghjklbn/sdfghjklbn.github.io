@@ -155,11 +155,33 @@ d3.csv("circular_tree_data_names_sequential.csv", function(error, data) {
     */
 ///console.log(stratify(filtered_data));
     
-    
-  var root = tree(stratify(data));
+     
+var root = tree(stratify(data));
   console.log(root);
 
-   
+var result = false
+console.log(findId(dataVariable, 33));
+
+function findId(data, id) {
+  if (result) {
+  	return true
+  };
+	if (data.length > 0) {
+		for (var i = 0; i < data.length; i++) {
+			if (data[i].id.includes(id)) {
+				console.log(data[i].id);
+				result = true;
+				return result;
+			}
+      if (data[i].data) {
+      	findId(data[i].data, id);
+      }
+		}
+	}
+	return result;
+}  
+    /*
+    
   root2 = d3.values(root.children)[15];
     
     /*
@@ -274,7 +296,8 @@ console.log(root.children.filter(function(d) {
 */
 
  ///console.log(root);     
- 
+
+    
   var link = g.selectAll(".link")
     .data(root.links())
     .enter().append("path")
