@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta http-equiv="content-type" content="text/javascript; charset=utf-8" />
+</head>    
+    
+<style>
+body { 
+    margin:0;
+    position:fixed;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0; 
+    background-image: radial-gradient(#ffffff 10%, #d8d8e0 90%);
+    }
+
+    
+.node circle {
+  fill: #D3D3D3	;
+  stroke: #666 ;
+  stroke-width: 1;
+  stroke-opacity: 0.8;
+}
+
+.node--internal circle {
+  fill: #D3D3D3	;
+  stroke: #666;
+  stroke-width: 1;
+  stroke-opacity: 0.8;
+}
+    
+    
+.node text {
+  font: 7.8px sans-serif;
+    cursor: default;
+}
+
+#div {
+  border: 2px solid #999;
+}
+
+    
+.node--internal text {
+  text-shadow: 0 1px 0 #fff, 0 -1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff;
+}
+
+.viz-container {
+    overflow: hidden;
+}
+    
+</style>
+
+    
+    
+<body>
+<script charset="utf-8" src="https://d3js.org/d3.v4.min.js"></script>
+<select id="select-color">
+    <option value="abs">Change in wages</option>
+    <option value="rel">Wage changes relative to the av. of wage changes</option>
+    <option value="wg">Women's wages compared to men's</option>
+    <option value="wg_limit">Women's wages (min 2. persons/gender) compared to men's</option>
+    <option value="wg_cont">Women's wages (controlled) compared to men's</option>    
+    <option value="wg_cont_limit">Women's wages (controlled, min 2. p/g) compared to men's</option>    
+    <option value="tenure">Women's tenure compared to men's</option>
+    <option value="manag_w">Manager wages relative to the av. of m. wages</option>
+  
+</select>
+<select id="select-feor">
+<option value='occ_51'>All</option>    
+<option value='occ_15'>Managing directors, managers (15)</option>
+<option value='occ_16'>Supervisors (16)</option>
+<option value='occ_14'>Chief executives, senior officials and legislators (14)</option>
+<option value='occ_17'>Technical, information technology, science related professionals (17)</option>
+<option value='occ_21'>Business type, legal and social sciences professionals (21)</option>
+<option value='occ_24'>Technicians and technical professionals (24)</option>
+<option value='occ_28'>Social health care, labour market services professionals (28)</option>
+<option value='occ_29'>Business related services administrators, agents (29)</option>
+<option value='occ_31'>Other administrators (31)</option>
+<option value='occ_32'>Office clerks (32)</option>
+<option value='occ_33'>Customer services occupations (33)</option>
+<option value='occ_34'>Commercial and catering occupations (34)</option>
+<option value='occ_35'>Service workers (35)</option>
+<option value='occ_36'>Agricultural occupations (36)</option>
+<option value='occ_38'>Food processing workers (38)</option>
+<option value='occ_39'>Light industry occupations (39)</option>
+<option value='occ_40'>Metal and electrical industry occupations (40)</option>
+<option value='occ_42'>Building industry occupations (42)</option>
+<option value='occ_44'>Manufacturing machine operators (44)</option>
+<option value='occ_45'>Assemblers (45)</option>
+<option value='occ_46'>Stationary machine operators (46)</option>
+<option value='occ_47'>Drivers and mobile machinery operators (47)</option>
+<option value='occ_48'>Occupations not requiring qualifications (48)</option>
+<option value='occ_50'>Entrepreneur (50)</option>
+</select>    
+    <div id="my_dataviz"></div> 
+</body>
+
+    
+    
+<script>  
+
+var svg = d3.select("body").append("svg")    
+      .attr("width", document.body.clientWidth)
+      .attr("height", document.body.clientHeight)
+      .call(d3.zoom().on("zoom", function () {
+              svg.attr("transform", d3.event.transform)
+      }))
+      .append("g");
+
+var g = svg.append("g").attr("transform", "translate(" + ((document.body.clientWidth / 2)) + "," + ((document.body.clientHeight / 2 )) + ")")    
+
+var stratify = d3.stratify()
+    .parentId(function(d) { return d.id.substring(0, d.id.lastIndexOf(".")); });
+
+var tree = d3.tree()
+    .size([2 * Math.PI, 480])
+    .separation(function(a, b) { return (a.parent == b.parent ? 1 : 1.2) / a.depth; });     
+  
+var tooltip = d3.select("#my_dataviz")
+    .append("div")
+    .style("position", "absolute")
+    .style("visibility", "hidden")
+    .style("font", "sans-serif")
+    .style('font-size', '12px')
+    .attr("stroke", "white")
+    .attr("stroke-width", ".2px")
+    .style("font-weight", "600")
+    .style("z-index", "10")
+    .style("opacity", 0.9)
+    .style("background", "white")
+    .style("color", "#333")
+    .style("border", "0px")		
+    .style("border-radius", "8px")	
+    .style("padding", "6px");
+    
+    
+var colorSelect = d3.select("#select-color")
+    .on("change", function() {
+        let colorOption = colorSelect.property('value')
+        d3.selectAll('circle')
+            .transition()
+            .duration(750)
+            .style("fill", function(d) {            
+                if(d.data.wage_sign == "0" & colorOption == "abs") {
+                  return "#E74C3C";
+                }
+                if(d.data.wage_sign == "1" & colorOption == "abs") {
+                  return "#28B463";
+                }
+                if(d.data.relevant_wagedif_norm == "0" & colorOption == "rel") {
+                  return "#E74C3C";
+                }
+                if(d.data.relevant_wagedif_norm == "1" & colorOption == "rel") {
+                  return "#28B463";
+                }
+                 if(d.data.wagegap == "1" & colorOption == "wg") {
+                  return "#E74C3C";
+                }
+                if(d.data.wagegap == "0" & colorOption == "wg") {
+                  return "#28B463";
+                }  
+                if(d.data.wagegap_wlimit == "1" & colorOption == "wg_limit") {
+                  return "#E74C3C";
+                }
+                if(d.data.wagegap_wlimit == "0" & colorOption == "wg_limit") {
+                  return "#28B463";
+                }      
+                if(d.data.wagegap_controlled == "1" & colorOption == "wg_cont") {
+                  return "#E74C3C";
+                }
+                if(d.data.wagegap_controlled == "0" & colorOption == "wg_cont") {
+                  return "#28B463";
+                }   
+                if(d.data.wagegap_controlled_wlimit == "1" & colorOption == "wg_cont_limit") {
+                  return "#E74C3C";
+                }
+                if(d.data.wagegap_controlled_wlimit == "0" & colorOption == "wg_cont_limit") {
+                  return "#28B463";
+                }                
+                 if(d.data.manag_av == "0" & colorOption == "manag_w") {
+                  return "#E74C3C";
+                }
+                if(d.data.manag_av == "1" & colorOption == "manag_w") {
+                  return "#28B463";
+                }                
+                if(d.data.tenure_dif == "1" & colorOption == "tenure") {
+                  return "#E74C3C";
+                }
+                if(d.data.tenure_dif == "0" & colorOption == "tenure") {
+                  return "#28B463";
+                }            
+        })
+        });
+  
+    ///test
+
+let myvar="occ_15" 
+ 
+function Reset() {  
+    var dropDown = document.getElementById("select-color");  
+    dropDown.selectedIndex = 0;  
+}  
+
+var selectfeor = d3.select("#select-feor")
+    .on("change", function() {
+        ///colorSelect.prop('selected', 'selected');
+        Reset();
+        d3.select("svg").remove();
+        myvar =  selectfeor.property('value');
+        data_viz(myvar);
+        });    
+ 
+
+//alap manager vizu kirajzolás    
+d3.csv("circular_tree_data_names_sequential_teljes_kereset.csv", function(error, data) {
+  if (error) throw error;
+
+  var root = tree(stratify(data));
+
+  var link = g.selectAll(".link")
+    .data(root.links())
+    .enter().append("path")
+      .attr("class", "link")
+      .attr("d", d3.linkRadial()
+          .angle(function(d) { return d.x; })
+          .radius(function(d) { return d.y; }))
+      .attr("fill", "none")
+      .attr("stroke-opacity",  0.3)
+      .attr("stroke-width", 1.5)
+      .style("stroke", function(d) { 
+                if(d.target.data.gender_dom == "2") {
+                    return "#ef3b2c";
+                }
+                if(d.target.data.gender_dom == "1") {
+                    return "#02818a";
+                }
+                else return "#17202A"
+            })
+      .on("mouseover", function(d) {
+        d3.select(this).style("cursor", "pointer"); })
+      .on("click", function(d){tooltip.text("No. of women: " + d.target.data.nok + " ; "+ "No. of men: " + d.target.data.ffiak); return tooltip.style("visibility", "visible");})
+      .on("mousemove", function(){return tooltip.style("top", (event.pageY +10)+"px").style("left",(event.pageX+10)+"px");})
+      .on("mouseout", function(){return tooltip.style("visibility", "hidden");});
+
+
+  var node = g.selectAll(".node")
+    .data(root.descendants())
+    .enter().append("g")
+      .attr("class", function(d) { return "node" + (d.children ? " node--internal" : " node--leaf"); })
+      .attr("transform", function(d) { return "translate(" + radialPoint(d.x, d.y) + ")"; });
+
+
+  node.append("circle")
+    .attr("r", 2.5)  
+    .style("stroke-opacity", .8)  
+        .style("fill", function(d) { 
+            if(d.data.wage_sign == "0") {
+              return "#E74C3C";
+            }
+            if(d.data.wage_sign == "1") {
+              return "#28B463";
+            }
+        })
+      .on("mouseover", function(d){tooltip.text(d.data.id_labels.substring(d.data.id_labels.lastIndexOf(".") + 1)); return tooltip.style("visibility", "visible");})
+      .on("mousemove", function(){return tooltip.style("top", (event.pageY +10)+"px").style("left",(event.pageX+10)+"px");})
+      .on("mouseout", function(){return tooltip.style("visibility", "hidden");});
+
+
+  node.append("text")
+      .attr("dy", "0.31em")
+      .attr("x", function(d) { return d.x < Math.PI === !d.children ? 8 : -8; })
+      .attr("text-anchor", function(d) { return d.x < Math.PI === !d.children ? "start" : "end"; })
+      .attr("transform", function(d) { return "rotate(" + (d.x < Math.PI ? d.x - Math.PI / 2 : d.x + Math.PI / 2) * 180 / Math.PI + ")"; })
+      .text(function(d) { return d.id.substring(d.id.lastIndexOf(".") + 1); })
+      .on("mouseover", function(d){tooltip.text(d.data.id_labels.substring(d.data.id_labels.lastIndexOf(".") + 1)); return tooltip.style("visibility", "visible");})
+      .on("mousemove", function(){return tooltip.style("top", (event.pageY +10)+"px").style("left",(event.pageX+10)+"px");})
+      .on("mouseout", function(){return tooltip.style("visibility", "hidden");});
+
+
+
+
+
+});
+
+function radialPoint(x, y) {
+  return [(y = +y) * Math.cos(x -= Math.PI / 2), y * Math.sin(x)];
+};
+
+    
+//Lenyíló menü mentén a function
+    function data_viz(myvar) {  
+               var svg = d3.select("body").append("svg")    
+                  .attr("width", document.body.clientWidth)
+                  .attr("height", document.body.clientHeight)
+                  .call(d3.zoom().on("zoom", function () {
+                          svg.attr("transform", d3.event.transform)
+                  }))
+                  .append("g");
+
+                var g = svg.append("g").attr("transform", "translate(" + ((document.body.clientWidth / 2)) + "," + ((document.body.clientHeight / 2 )) + ")")      
+
+
+            d3.csv("circular_tree_data_names_sequential.csv", function(error, data) {
+              if (error) throw error;
+  
+                filtered_data = data.filter(function(d) {
+                   return d[myvar]=="1" ;
+                 } )
+
+
+              var root = tree(stratify(filtered_data));
+
+              var link = g.selectAll(".link")
+                .data(root.links())
+                .enter().append("path")
+                  .attr("class", "link")
+                  .attr("d", d3.linkRadial()
+                      .angle(function(d) { return d.x; })
+                      .radius(function(d) { return d.y; }))
+                  .attr("fill", "none")
+                  .attr("stroke-opacity",  0.3)
+                  .attr("stroke-width", 1.5)
+                  .style("stroke", function(d) { 
+                            if(d.target.data.gender_dom == "2") {
+                                return "#ef3b2c";
+                            }
+                            if(d.target.data.gender_dom == "1") {
+                                return "#02818a";
+                            }
+                            else return "#17202A"
+                        })
+                  .on("mouseover", function(d) {
+                    d3.select(this).style("cursor", "pointer"); })
+                  .on("click", function(d){tooltip.text("No. of women: " + d.target.data.nok + " ; "+ "No. of men: " + d.target.data.ffiak); return tooltip.style("visibility", "visible");})
+                  .on("mousemove", function(){return tooltip.style("top", (event.pageY +10)+"px").style("left",(event.pageX+10)+"px");})
+                  .on("mouseout", function(){return tooltip.style("visibility", "hidden");});
+
+
+              var node = g.selectAll(".node")
+                .data(root.descendants())
+                .enter().append("g")
+                  .attr("class", function(d) { return "node" + (d.children ? " node--internal" : " node--leaf"); })
+                  .attr("transform", function(d) { return "translate(" + radialPoint(d.x, d.y) + ")"; });
+
+
+              node.append("circle")
+                .attr("r", 2.5)  
+                .style("stroke-opacity", .8)  
+                    .style("fill", function(d) { 
+                        if(d.data.wage_sign == "0") {
+                          return "#E74C3C";
+                        }
+                        if(d.data.wage_sign == "1") {
+                          return "#28B463";
+                        }
+                    })
+                  .on("mouseover", function(d){tooltip.text(d.data.id_labels.substring(d.data.id_labels.lastIndexOf(".") + 1)); return tooltip.style("visibility", "visible");})
+                  .on("mousemove", function(){return tooltip.style("top", (event.pageY +10)+"px").style("left",(event.pageX+10)+"px");})
+                  .on("mouseout", function(){return tooltip.style("visibility", "hidden");});
+
+
+              node.append("text")
+                  .attr("dy", "0.31em")
+                  .attr("x", function(d) { return d.x < Math.PI === !d.children ? 8 : -8; })
+                  .attr("text-anchor", function(d) { return d.x < Math.PI === !d.children ? "start" : "end"; })
+                  .attr("transform", function(d) { return "rotate(" + (d.x < Math.PI ? d.x - Math.PI / 2 : d.x + Math.PI / 2) * 180 / Math.PI + ")"; })
+                  .text(function(d) { return d.id.substring(d.id.lastIndexOf(".") + 1); })
+                  .on("mouseover", function(d){tooltip.text(d.data.id_labels.substring(d.data.id_labels.lastIndexOf(".") + 1)); return tooltip.style("visibility", "visible");})
+                  .on("mousemove", function(){return tooltip.style("top", (event.pageY +10)+"px").style("left",(event.pageX+10)+"px");})
+                  .on("mouseout", function(){return tooltip.style("visibility", "hidden");});
+
+
+
+
+
+            });
+
+            function radialPoint(x, y) {
+              return [(y = +y) * Math.cos(x -= Math.PI / 2), y * Math.sin(x)];
+            }
+
+        }
+
+        
+        
+        
+</script>
