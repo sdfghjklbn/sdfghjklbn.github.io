@@ -57,11 +57,7 @@ body {
 <script charset="utf-8" src="https://d3js.org/d3.v4.min.js"></script>
 <select id="select-color">
     <option value="abs">Change in wages</option>
-    <option value="rel">Wage changes relative to the av. of wage changes</option>
-    <option value="wg">Women's wages compared to men's</option>
-    <option value="wg_limit">Women's wages (min 2. persons/gender) compared to men's</option>
-    <option value="wg_cont">Women's wages (controlled) compared to men's</option>    
-    <option value="wg_cont_limit">Women's wages (controlled, min 2. p/g) compared to men's</option>    
+    <option value="wg_limit">Women's wages (min 2. persons/gender) compared to men's</option> 
     <option value="tenure">Women's tenure compared to men's</option>
     <option value="manag_w">Manager wages relative to the av. of m. wages</option>
   
@@ -148,36 +144,12 @@ var colorSelect = d3.select("#select-color")
                 if(d.data.wage_sign == "1" & colorOption == "abs") {
                   return "#28B463";
                 }
-                if(d.data.relevant_wagedif_norm == "0" & colorOption == "rel") {
-                  return "#E74C3C";
-                }
-                if(d.data.relevant_wagedif_norm == "1" & colorOption == "rel") {
-                  return "#28B463";
-                }
-                 if(d.data.wagegap == "1" & colorOption == "wg") {
-                  return "#E74C3C";
-                }
-                if(d.data.wagegap == "0" & colorOption == "wg") {
-                  return "#28B463";
-                }  
                 if(d.data.wagegap_wlimit == "1" & colorOption == "wg_limit") {
                   return "#E74C3C";
                 }
                 if(d.data.wagegap_wlimit == "0" & colorOption == "wg_limit") {
                   return "#28B463";
-                }      
-                if(d.data.wagegap_controlled == "1" & colorOption == "wg_cont") {
-                  return "#E74C3C";
-                }
-                if(d.data.wagegap_controlled == "0" & colorOption == "wg_cont") {
-                  return "#28B463";
-                }   
-                if(d.data.wagegap_controlled_wlimit == "1" & colorOption == "wg_cont_limit") {
-                  return "#E74C3C";
-                }
-                if(d.data.wagegap_controlled_wlimit == "0" & colorOption == "wg_cont_limit") {
-                  return "#28B463";
-                }                
+                }              
                  if(d.data.manag_av == "0" & colorOption == "manag_w") {
                   return "#E74C3C";
                 }
