@@ -213,7 +213,7 @@ var selectfeor = d3.select("#select-feor")
  
 
 //alap manager vizu kirajzolás    
-d3.csv("circular_tree_data_names_sequential_teljes_kereset.csv", function(error, data) {
+d3.csv("circular_tree_data_names_sequential.csv", function(error, data) {
   if (error) throw error;
 
   var root = tree(stratify(data));
